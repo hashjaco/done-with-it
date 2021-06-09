@@ -1,17 +1,13 @@
 import React from "react";
-import { View } from "react-native";
 import Screen from "./app/components/Screen/Screen";
-import Icon from "./app/components/Icon/Icon";
-import ListItem from "./app/components/ListItem/ListItem";
+import { TextInput } from "react-native";
 
 export default function App() {
   return (
     <Screen>
-      <ListItem
-        title="My Title"
-        ImageComponent={
-          <Icon backgroundColor="red" iconColor="white" name="email" />
-        }
+      <TextInput
+        placeholder="First name"
+        style={{ borderBottomColor: "#ccc", borderBottomWidth: 1 }}
       />
     </Screen>
   );

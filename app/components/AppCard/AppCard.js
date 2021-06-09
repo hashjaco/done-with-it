@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Image } from "react-native";
+import { View, Image, StyleSheet } from "react-native";
 import AppText from "../AppText/AppText";
 import styles from "./styles";
 
@@ -8,8 +8,8 @@ const AppCard = ({ title, subtitle, image }) => {
     <View style={styles.card}>
       <Image style={styles.image} source={image} />
       <View style={styles.detailsContainer}>
-        <AppText>{title}</AppText>
-        <AppText>{subtitle}</AppText>
+        <AppText style={styles.title}>{title}</AppText>
+        <AppText style={styles.subtitle}>{subtitle}</AppText>
       </View>
     </View>
   );
