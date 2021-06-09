@@ -1,12 +1,12 @@
 import React from "react";
-import { SafeAreaView, StyleSheet } from "react-native";
+import { SafeAreaView, StyleSheet, View } from "react-native";
 import Constants from "expo-constants";
 import colors from "../../config/colors";
 
-const Screen = ({ bgColor = colors.white, children }) => {
+const Screen = ({ children, style }) => {
   return (
-    <SafeAreaView style={[styles.screen, { backgroundColor: bgColor }]}>
-      {children}
+    <SafeAreaView style={styles.screen}>
+      <View style={style}>{children}</View>
     </SafeAreaView>
   );
 };

@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
   },
   title: {
     marginBottom: 7,
+    color: colors.primary,
   },
 });
 
