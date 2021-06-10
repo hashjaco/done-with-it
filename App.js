@@ -1,18 +1,15 @@
 import React, { useState } from "react";
 import Screen from "./app/components/Screen/Screen";
-import { TextInput } from "react-native";
+import AppPicker from "./app/components/AppPicker/AppPicker";
 import AppTextInput from "./app/components/AppTextInput/AppTextInput";
 
 export default function App() {
-  const [firstName, setFirstName] = useState("");
+  const [isNew, setIsNew] = useState(false);
 
   return (
     <Screen>
-      <AppTextInput
-        placeholder="First name"
-        onChangeText={(text) => setFirstName(text)}
-        icon="email"
-      />
+      <AppPicker icon="apps" placeholder="Category" />
+      <AppTextInput icon="email" placeholder="Email" />
     </Screen>
   );
 }
