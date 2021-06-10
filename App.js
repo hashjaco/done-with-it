@@ -11,7 +11,7 @@ export default function App() {
       <AppTextInput
         placeholder="First name"
         onChangeText={(text) => setFirstName(text)}
-        style={{ borderBottomColor: "#ccc", borderBottomWidth: 1 }}
+        icon="email"
       />
     </Screen>
   );
